@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap"
     rel="stylesheet">
 
-  <title>Shop | Catalog</title>
+  <title>Shop | Registration</title>
 </head>
 
 <body>
@@ -100,188 +100,62 @@
     </div>
   </header>
 
-  <main>
-    <h1 class="visually-hidden">Catalog</h1>
-    <section class="auxiliary-navigation">
-      <h2>new arrivals</h2>
-      <nav>
-        <ul>
-          <li>home</li>
-          <li>men</li>
-          <li>new arrivals</li>
+  <main class="registration ">
+    <div class="registration__title_background-color">
+      <h1 class="registration__title container">registration</h1>
+    </div>
+    <div class="registration__wrap container">
+      <form class="registration__form" action="endpoint">
+        <fieldset class="registration__fieldset">
+          <legend class="registration__legend">Your Name</legend>
+          <div class="registration__input-wrap">
+            <input class="registration__input registration__input_user-name" type="text" id="userName" required>
+            <label for="userName" class="registration__input-label">First Name</label>
+          </div>
+          <div class="registration__input-wrap">
+            <input class="registration__input registration__input_user-surname" type="text" id="userSurname" required>
+            <label for="userSurname" class="registration__input-label">Last Name</label>
+          </div>
+        </fieldset>
+        <fieldset class="registration__sex">
+          <input class="registration__sex-radio" name="sex" id="sexMale" type="radio">
+          <label class="registration__user-sex registration__user-sex_male" for="sexMale">Male</label>
+          <input class="registration__sex-radio" name="sex" id="sexFemale"
+              type="radio">
+          <label class="registration__user-sex registration__user-sex_female" for="sexFemale">Female</label>
+        </fieldset>
+        <fieldset class="registration__fieldset registration__fieldset-details">
+          <legend class="registration__legend">Login details</legend>
+          <p class="registration__input-wrap">
+            <input class="registration__input registration__input_email" type="email" id="userEmail" required>
+            <label for="userEmail" class="registration__input-label">Email</label>
+          </p>
+          <p class="registration__input-wrap">
+            <input class="registration__input registration__input_password" type="password" id="userPassword" required>
+            <label for="userPassword" class="registration__input-label">Password</label>
+          </p>
+          <p class="registration__fieldset-note">Please use 8 or more characters, with at least 1 number and a mixture of
+            uppercase and lowercase letters</p>
+        </fieldset>
+        <button class="registration__btn" type="submit">join now
+          <img class="registration__btn-image" src="img/right-arrow-v2.svg" alt="right arrow" width="17" height="10">
+        </button>
+      </form>
+      <div class="loyalty">
+        <h2 class="loyalty__title">LOYALTY HAS ITS PERKS</h2>
+        <p class="loyalty__text">Get in on the loyalty program where you can earn points and unlock serious perks.
+          Starting with these as soon
+          as
+          you join:</p>
+        <ul class="loyalty__list">
+          <li class="loyalty__item">15% off welcome offer</li>
+          <li class="loyalty__item">Free shipping, returns and exchanges on all orders</li>
+          <li class="loyalty__item">$10 off a purchase on your birthday</li>
+          <li class="loyalty__item">Early access to products</li>
+          <li class="loyalty__item">Exclusive offers & rewards</li>
         </ul>
-      </nav>
-    </section>
-    <section class="filter">
-      <button class="filter__btn" type="button">
-        <h2 class="filter__heading">filter</h2>
-        <img class="filter__image" src="img/filter.svg" alt="filter">
-      </button>
-      <ul class="filter__list">
-        <li class="filter__item">
-          <button class="filter__item-btn filter__item-btn_active">category</button>
-          <label><input type="checkbox">Accessories</label>
-          <label><input type="checkbox">Bags</label>
-          <label><input type="checkbox">Denim</label>
-          <label><input type="checkbox">Hoodies & Sweatshirts</label>
-          <label><input type="checkbox">Jackets & Coats</label>
-          <label><input type="checkbox">Polos</label>
-          <label><input type="checkbox">Shirts</label>
-          <label><input type="checkbox">Shoes</label>
-          <label><input type="checkbox">Sweaters & Knits</label>
-          <label><input type="checkbox">T-Shirts</label>
-          <label><input type="checkbox">Tanks</label>
-          <!-- <ul class="filter__item filter-sublist">
-            <li class="filter-sublist__item"><a class="filter-sublist__link" href="#">Accessories</a></li>
-            <li class="filter-sublist__item"><a href="#">Bags</a></li>
-            <li class="filter-sublist__item"><a href="#">Denim</a></li>
-            <li class="filter-sublist__item"><a href="#">Hoodies & Sweatshirts</a></li>
-            <li class="filter-sublist__item"><a href="#">Jackets & Coats</a></li>
-            <li class="filter-sublist__item"><a href="#">Polos</a></li>
-            <li class="filter-sublist__item"><a href="#">Shirts</a></li>
-            <li class="filter-sublist__item"><a href="#">Shoes</a></li>
-            <li class="filter-sublist__item"><a href="#">Sweaters & Knits</a></li>
-            <li class="filter-sublist__item"><a href="#">T-Shirts</a></li>
-            <li class="filter-sublist__item"><a href="#">Tanks</a></li>
-          </ul> -->
-        </li>
-        <li class="filter">
-          <a class="filter" href="#">brand</a>
-          <ul class="filter">
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-          </ul>
-        </li>
-        <li class="filter">
-          <a class="filter" href="#">designer</a>
-          <ul class="filter">
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-          </ul>
-        </li>
-      </ul>
-      <ul class="filter">
-        <li>
-          <button>trending now</button>
-          <label><input type="checkbox"></label>
-          <label><input type="checkbox"></label>
-        </li>
-        <li>
-          <button>size</button>
-          <label><input type="checkbox">xs</label>
-          <label><input type="checkbox">s</label>
-          <label><input type="checkbox">m</label>
-          <label><input type="checkbox">l</label>
-        </li>
-        <li>
-          <button>price</button>
-          <label><input type="checkbox"></label>
-          <label><input type="checkbox"></label>
-        </li>
-      </ul>
-    </section>
-    <section class="products container">
-      <h2 class="visually-hidden">Products</h2>
-      <ul class="products__list">
-        <li class="products__item">
-          <img class="products__item-image" src="img/product-1.jpg" alt="product 1" width="360" height="420">
-          <h3 class="products__item-heading">ellery x m’o capsule</h3>
-          <p class="products__item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of
-            cool Kym Ellery teams up with Moda Operandi.</p>
-          <p class="products__item-price">$52.00</p>
-          <button class="products__btn-addtocart" type="button">Add to Cart</button>
-        </li>
-        <li class="products__item">
-          <img class="products__item-image" src="img/product-7.jpg" alt="product 7" width="360" height="420">
-          <h3 class="products__item-heading">ellery x m’o capsule</h3>
-          <p class="products__item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of
-            cool Kym Ellery teams up with Moda Operandi.</p>
-          <p class="products__item-price">$52.00</p>
-          <button class="products__btn-addtocart" type="button">Add to Cart</button>
-        </li>
-        <li class="products__item">
-          <img class="products__item-image" src="img/product-3.jpg" alt="product 3" width="360" height="420">
-          <h3 class="products__item-heading">ellery x m’o capsule</h3>
-          <p class="products__item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of
-            cool Kym Ellery teams up with Moda Operandi.</p>
-          <p class="products__item-price">$52.00</p>
-          <button class="products__btn-addtocart" type="button">Add to Cart</button>
-        </li>
-        <li class="products__item">
-          <img class="products__item-image" src="img/product-4.jpg" alt="product 4" width="360" height="420">
-          <h3 class="products__item-heading">ellery x m’o capsule</h3>
-          <p class="products__item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of
-            cool Kym Ellery teams up with Moda Operandi.</p>
-          <p class="products__item-price">$52.00</p>
-          <button class="products__btn-addtocart" type="button">Add to Cart</button>
-        </li>
-        <li class="products__item">
-          <img class="products__item-image" src="img/product-8.jpg" alt="product 8" width="360" height="420">
-          <h3 class="products__item-heading">ellery x m’o capsule</h3>
-          <p class="products__item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of
-            cool Kym Ellery teams up with Moda Operandi.</p>
-          <p class="products__item-price">$52.00</p>
-          <button class="products__btn-addtocart" type="button">Add to Cart</button>
-        </li>
-        <li class="products__item">
-          <img class="products__item-image" src="img/product-9.jpg" alt="product 9" width="360" height="420">
-          <h3 class="products__item-heading">ellery x m’o capsule</h3>
-          <p class="products__item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of
-            cool Kym Ellery teams up with Moda Operandi.</p>
-          <p class="products__item-price">$52.00</p>
-          <button class="products__btn-addtocart" type="button">Add to Cart</button>
-        </li>
-        <li class="products__item">
-          <img class="products__item-image" src="img/product-10.jpg" alt="product 10" width="360" height="420">
-          <h3 class="products__item-heading">ellery x m’o capsule</h3>
-          <p class="products__item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of
-            cool Kym Ellery teams up with Moda Operandi.</p>
-          <p class="products__item-price">$52.00</p>
-          <button class="products__btn-addtocart" type="button">Add to Cart</button>
-        </li>
-        <li class="products__item">
-          <img class="products__item-image" src="img/product-11.jpg" alt="product 11" width="360" height="420">
-          <h3 class="products__item-heading">ellery x m’o capsule</h3>
-          <p class="products__item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of
-            cool Kym Ellery teams up with Moda Operandi.</p>
-          <p class="products__item-price">$52.00</p>
-          <button class="products__btn-addtocart" type="button">Add to Cart</button>
-        </li>
-        <li class="products__item">
-          <img class="products__item-image" src="img/product-12.jpg" alt="product 12" width="360" height="420">
-          <h3 class="products__item-heading">ellery x m’o capsule</h3>
-          <p class="products__item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of
-            cool Kym Ellery teams up with Moda Operandi.</p>
-          <p class="products__item-price">$52.00</p>
-          <button class="products__btn-addtocart" type="button">Add to Cart</button>
-        </li>
-      </ul>
-      <div class="products__pagination">
-        <button class="products__pagination-arrow products__pagination-arrow_left" type="button"><img
-            src="img/left-arrow.svg" alt="left arrow"></button>
-        <ul class="products__pagination-list">
-          <li class="products__pagination-item products__pagination-item_current"><button class="products__pagination-btn products__pagination-btn_current" type="button">1</button></li>
-          <li class="products__pagination-item"><button class="products__pagination-btn" type="button">2</button></li>
-          <li class="products__pagination-item"><button class="products__pagination-btn" type="button">3</button></li>
-          <li class="products__pagination-item"><button class="products__pagination-btn" type="button">4</button></li>
-          <li class="products__pagination-item"><button class="products__pagination-btn" type="button">5</button></li>
-          <li class="products__pagination-item"><button class="products__pagination-btn" type="button">6</button></li>
-          <li class="products__pagination-item products__pagination-item_ellipsis"><button
-              class="products__pagination-btn" type="button">…</button></li>
-          <li class="products__pagination-item"><button class="products__pagination-btn" type="button">20</button></li>
-        </ul>
-        <button class="products__pagination-arrow products__pagination-arrow_right" type="button"><img
-            src="img/left-arrow.svg" alt="right arrow"></button>
       </div>
-    </section>
-
+    </div>
   </main>
 
   <footer class="footer">
