@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap"
     rel="stylesheet">
 
-  <title>Shop | Registration</title>
+  <title>Shop | Cart</title>
 </head>
 
 <body>
@@ -100,62 +100,82 @@
     </div>
   </header>
 
-  <main class="registration">
-    <div class="registration__title_background-color">
-      <h1 class="registration__title container">registration</h1>
+  <main class="cart">
+    <div class="cart__title_background-color">
+      <h1 class="cart__title container">shopping cart</h1>
     </div>
-    <div class="registration__wrap container">
-      <form class="registration__form" action="endpoint">
-        <fieldset class="registration__fieldset">
-          <legend class="registration__legend">Your Name</legend>
-          <div class="registration__input-wrap">
-            <input class="registration__input registration__input_user-name" type="text" id="userName" required>
-            <label for="userName" class="registration__input-label">First Name</label>
-          </div>
-          <div class="registration__input-wrap">
-            <input class="registration__input registration__input_user-surname" type="text" id="userSurname" required>
-            <label for="userSurname" class="registration__input-label">Last Name</label>
-          </div>
-        </fieldset>
-        <fieldset class="registration__sex">
-          <input class="registration__sex-radio" name="sex" id="sexMale" type="radio">
-          <label class="registration__user-sex registration__user-sex_male" for="sexMale">Male</label>
-          <input class="registration__sex-radio" name="sex" id="sexFemale"
-              type="radio">
-          <label class="registration__user-sex registration__user-sex_female" for="sexFemale">Female</label>
-        </fieldset>
-        <fieldset class="registration__fieldset registration__fieldset-details">
-          <legend class="registration__legend">Login details</legend>
-          <p class="registration__input-wrap">
-            <input class="registration__input registration__input_email" type="email" id="userEmail" required>
-            <label for="userEmail" class="registration__input-label">Email</label>
-          </p>
-          <p class="registration__input-wrap">
-            <input class="registration__input registration__input_password" type="password" id="userPassword" required>
-            <label for="userPassword" class="registration__input-label">Password</label>
-          </p>
-          <p class="registration__fieldset-note">Please use 8 or more characters, with at least 1 number and a mixture of
-            uppercase and lowercase letters</p>
-        </fieldset>
-        <button class="registration__btn" type="submit">join now
-          <img class="registration__btn-image" src="img/right-arrow-v2.svg" alt="right arrow" width="17" height="10">
-        </button>
-      </form>
-      <div class="loyalty">
-        <h2 class="loyalty__title">LOYALTY HAS ITS PERKS</h2>
-        <p class="loyalty__text">Get in on the loyalty program where you can earn points and unlock serious perks.
-          Starting with these as soon
-          as
-          you join:</p>
-        <ul class="loyalty__list">
-          <li class="loyalty__item">15% off welcome offer</li>
-          <li class="loyalty__item">Free shipping, returns and exchanges on all orders</li>
-          <li class="loyalty__item">$10 off a purchase on your birthday</li>
-          <li class="loyalty__item">Early access to products</li>
-          <li class="loyalty__item">Exclusive offers & rewards</li>
+    <form class="cart__form container" action="endpoint">
+      <div class="cart__shopping-list">
+        <ul class="cart__list">
+          <li class="cart__item">
+            <img class="cart__item-image" src="img/product-3.jpg" alt="product 3" width="262" height="306">
+            <div class="cart__item-info product-description">
+              <h2 class="product-description__title">mango people<br>t-shirt</h2>
+              <ul class="product-description__list">
+                <li class="product-description__item">Price: <span
+                    class="product-description__item_price-value">$300</span></li>
+                <li class="product-description__item">Color: <span
+                    class="product-description__item_color-value">Red</span></li>
+                <li class="product-description__item">Size: <span class="product-description__item_size-value">XL</span>
+                </li>
+                <li class="product-description__item">Quantity: <span
+                    class="product-description__item_quantity-value">2</span></li>
+              </ul>
+            </div>
+            <button class="cart__item-btnremove" type="button">
+              <img src="img/btnremove.svg" alt="remove product from cart" width="18" height="18">
+            </button>
+          </li>
+          <li class="cart__item">
+            <img class="cart__item-image" src="img/product-7.jpg" alt="product 7" width="262" height="306">
+            <div class="cart__item-info product-description">
+              <h2 class="product-description__title">mango people<br>t-shirt</h2>
+              <ul class="product-description__list">
+                <li class="product-description__item">Price: <span
+                    class="product-description__item_price-value">$300</span></li>
+                <li class="product-description__item">Color: <span
+                    class="product-description__item_color-value">Red</span></li>
+                <li class="product-description__item">Size: <span class="product-description__item_size-value">XL</span>
+                </li>
+                <li class="product-description__item">Quantity: <span
+                    class="product-description__item_quantity-value">2</span></li>
+              </ul>
+            </div>
+            <button class="cart__item-btnremove" type="button">
+              <img src="img/btnremove.svg" alt="remove product from cart" width="18" height="18">
+            </button>
+          </li>
         </ul>
+        <div class="cart_buttons">
+          <button class="cart__btn-reset" type="button">clear shopping cart</button>
+          <a href="catalog.html" class="cart__link">continue shopping</a>
+        </div>
       </div>
-    </div>
+      <div class="cart__total-info">
+        <fieldset class="cart__fieldset">
+          <legend class="cart__legend">shipping adress</legend>
+          <div class="cart__input-wrap">
+            <input class="cart__input cart__input_user-country" type="text" id="userCountry" placeholder="Bangladesh"
+              disabled>
+          </div>
+          <div class="cart__input-wrap">
+            <input class="cart__input cart__input_user-state" type="text" id="userState" required>
+            <label for="userState" class="cart__input-label">State</label>
+          </div>
+          <div class="cart__input-wrap">
+            <input class="cart__input cart__input_user-postcode" type="text" id="userPostcode" required>
+            <label for="userPostcode" class="cart__input-label">Postcode / Zip</label>
+          </div>
+          <button class="cart__address-btn" type="button">get a quote</button>
+        </fieldset>
+        <div class="cart__total">
+          <p class="cart__sub-total">sub total<span class="cart__sub-total_value">$900</span></p>
+          <p class="cart__grand-total">grand total<span class="cart__grand-total_value">$900</span></p>
+          <div class="cart__line"></div>
+          <button class="cart__proceed-btn" type="button">proceed to checkout</button>
+        </div>
+      </div>
+    </form>
   </main>
 
   <footer class="footer">
