@@ -6,10 +6,7 @@
 }
 
 body {
-    font-family: Lato;
-    font-size: 14px;
-    line-height: 17px;
-    font-weight: 300;
+    font-family: 'Lato', 'Arial', sans-serif;
     font-style: normal;
 }
 
@@ -444,6 +441,10 @@ button {
     border: 1px solid #ffffff;
 }
 
+.products__item-link {
+    text-decoration: none;
+}
+
 .products__item-heading {
     margin-top: 25px;
     font-weight: 400;
@@ -826,6 +827,7 @@ button {
     display: none;
 }
 
+
 .registration__title_background-color {
     background-color: #f8f3f4;
 }
@@ -1066,6 +1068,7 @@ fieldset {
         margin-bottom: 96px;
     }
 }
+
 
 .cart__title_background-color {
     background-color: #f8f3f4;
@@ -1418,6 +1421,315 @@ fieldset {
     .cart__total {
         width: 100%;
         margin: 49px 0 0 0;
+    }
+}
+
+
+@font-face {
+    font-family: 'Lato';
+  src: url("../../fonts/lato-light.woff") format("woff"), url("../../fonts/lato-light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+  src: url("../../fonts/lato-lightitalic.woff") format("woff"), url("../../fonts/lato-lightitalic.woff2") format("woff2");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lato';
+  src: url("../../fonts/lato-regular.woff") format("woff"), url("../../fonts/lato-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+  src: url("../../fonts/lato-italic.woff") format("woff"), url("../../fonts/lato-italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lato';
+  src: url("../../fonts/lato-bold.woff") format("woff"), url("../../fonts/lato-bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+  src: url("../../fonts/lato-bolditalic.woff") format("woff"), url("../../fonts/lato-bolditalic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lato';
+  src: url("../../fonts/lato-black.woff") format("woff"), url("../../fonts/lato-black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+  src: url("../../fonts/lato-blackitalic.woff") format("woff"), url("../../fonts/lato-blackitalic.woff2") format("woff2");
+  font-weight: 900;
+  font-style: italic;
+}
+
+.bg-f7f7f7 {
+    background-color: #f7f7f7;
+}
+
+.bg-ef5b70 {
+    background-color: #ef5b70;
+}
+
+.bg-eaeaea {
+    background-color: #eaeaea;
+}
+
+.bg-ffffff {
+    background-color: #ffffff;
+}
+
+.bor-1px-solid-eaeaea {
+    border: 1px solid #eaeaea;
+}
+
+.bor-1px-solid-ff6a6a {
+    border: 1px solid #ff6a6a;
+}
+
+.btn-arrow-size {
+    width: 47px;
+}
+
+.font-color-arrow {
+    color: #000000;
+}
+
+.font-color-arrow:hover {
+    color: #f16d7f;
+}
+
+.font-size-arrow {
+    font-size: 21px;
+}
+
+.h-2px {
+    height: 2px;
+}
+
+.h-3px {
+    height: 3px;
+}
+
+.min-h-148px {
+    min-height: 148px;
+}
+
+.min-w-63px {
+    min-width: 63px;
+}
+
+.min-w-641px {
+    min-width: 641px;
+}
+
+.max-w-555px {
+    max-width: 555px;
+}
+
+.max-w-597px {
+    max-width: 597px;
+}
+
+.max-w-1140px {
+    max-width: 1140px;
+}
+
+.mar-b-0 {
+    margin-bottom: 0;
+}
+
+.mar-r-23px {
+    margin-right: 23px;
+}
+
+.mar-t--45px {
+    margin-top: -45px;
+}
+
+.mar-t-12px {
+    margin-top: 12px;
+}
+
+.mar-t-32px {
+    margin-top: 32px;
+}
+
+.mar-t-48px {
+    margin-top: 48px;
+}
+
+.mar-t-65px {
+    margin-top: 65px;
+}
+
+.pad-b-14px {
+    padding-bottom: 14px;
+}
+
+.pad-b-65px {
+    padding-bottom: 65px;
+}
+
+.mar-b-128px {
+    margin-bottom: 128px;
+}
+
+.pad-l-0 {
+    padding-left: 0;
+}
+
+.pad-l-16px {
+    padding-left: 16px;
+}
+
+.pad-l-55px {
+    padding-left: 55px;
+}
+
+.pad-r-16px {
+    padding-right: 16px;
+}
+
+.pad-r-55px {
+    padding-right: 55px;
+}
+
+.pad-t-14px {
+    padding-top: 14px;
+}
+
+.pad-t-65px {
+    padding-top: 65px;
+}
+
+.ts14 {
+    font-size: 14px;
+}
+
+.ts16 {
+    font-size: 16px;
+}
+
+.ts18 {
+    font-size: 18px;
+}
+
+.ts24 {
+    font-size: 29px;
+}
+
+.ts29 {
+    font-size: 29px;
+}
+
+.tlh17 {
+    line-height: 17px;
+}
+
+.tlh19 {
+    line-height: 19px;
+}
+
+.tlh22 {
+    line-height: 22px;
+}
+
+.tlh29 {
+    line-height: 29px;
+}
+
+.t-300 {
+    font-weight: 300;
+}
+
+.t-upper {
+    text-transform: uppercase;
+}
+
+.t-td-none {
+    text-decoration: none;
+}
+
+.t-f16d7f {
+    color: #f16d7f;
+}
+
+.t-4d4d4d {
+    color: #4d4d4d;
+}
+
+.t-5e5e5e {
+    color: #5e5e5e;
+}
+
+.t-ef5b70 {
+    color: #ef5b70;
+}
+
+.t-636363 {
+    color: #636363;
+}
+
+.t-6f6e6e {
+    color: #6f6e6e;
+}
+
+.t-f26376 {
+    color: #f26376;
+}
+
+.z--1 {
+    z-index: -1;
+}
+
+@media (max-width: 1024px) {
+    .mar-t-0-tablet {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 667px) {
+    .min-w-0-phone {
+        min-width: 0;
+    }
+
+    .mar-b-64px-phone {
+        margin-bottom: 64px;
+    }
+
+    .w-45-phone {
+        width: 45%;
+    }
+}
+
+@media (min-width: 744px) and (max-width: 1104px) {
+    .display-none-tablet {
+        display: none;
+    }
+}
+
+@media (max-width: 744px) {
+    .display-none-phone {
+        display: none;
     }
 }
 
