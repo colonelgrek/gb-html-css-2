@@ -7,6 +7,10 @@
 
 body {
     font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 300;
+    font-style: normal;
     font-style: normal;
 }
 
@@ -56,10 +60,19 @@ button {
 
 .header__logo {
     margin: 0 41px 0 3px;
+    text-decoration: none;
 }
 
-.header__logo:hover, .header__logo:focus {
-    opacity: 0.6;
+.header__logo-img {
+    transition: transform 800ms;
+}
+
+.header__logo-img:hover, .header__logo-img:focus {
+    transform: rotate(360deg);
+}
+
+.header__logo-img:active {
+    transform: scale(1.1);
 }
 
 .header__link {
@@ -68,25 +81,37 @@ button {
     text-decoration: none;
 }
 
-.header__loupe,
+.header__loupe-img,
 .header__menu-toggle,
-.header__link {
+.header__link-user-img,
+.header__link-cart-img {
     fill: #e8e8e8;
+    transition: transform 800ms, fill 700ms;
 }
 
-.header__loupe:hover, .header__loupe:focus,
+.header__loupe-img:hover, .header__loupe-img:focus,
   .header__menu-toggle:hover,
   .header__menu-toggle:focus,
-  .header__link:hover,
-  .header__link:focus {
+  .header__link-user-img:hover,
+  .header__link-user-img:focus,
+  .header__link-cart-img:hover,
+  .header__link-cart-img:focus {
     fill: #f26376;
+    transform: rotateY(180deg);
+}
+
+.header__loupe-img:active,
+  .header__menu-toggle:active,
+  .header__link-user-img:active,
+  .header__link-cart-img:active {
+    transform: scale(1.1);
 }
 
 .header__link-cart {
     margin-right: 12px;
 }
 
-.header__link-cart_counter {
+.header__link-cart-counter {
     position: absolute;
     top: -20px;
     right: -9px;
@@ -233,13 +258,13 @@ button {
     border-left: 12px solid #f16d7f;
 }
 
-.brand__heading_text {
+.brand__heading-text_small {
     font-size: 32px;
     font-weight: 700;
     line-height: 38px;
 }
 
-.brand__heading_pink {
+.brand__heading-text_pink {
     color: #f16d7f;
 }
 
@@ -250,7 +275,7 @@ button {
         line-height: 52px;
     }
 
-    .brand__heading_text {
+    .brand__heading-text_small {
         font-size: 24px;
         line-height: 28px;
     }
@@ -273,7 +298,7 @@ button {
         line-height: 45px;
     }
 
-    .brand__heading_text {
+    .brand__heading-text_small {
         font-size: 20px;
         line-height: 24px;
     }
@@ -636,7 +661,7 @@ button {
     color: #222224;
 }
 
-.subscription__hello-text_italic {
+.subscription__hello-quote_italic {
     font-style: italic;
 }
 
@@ -707,7 +732,9 @@ button {
 }
 
 .subscription__btn:hover, .subscription__btn:focus {
-    opacity: 0.8;
+    color: #f16d7f;
+    background-color: #ffffff;
+    border: 2px solid #f16d7f;
 }
 
 .footer__bottom {
@@ -740,6 +767,7 @@ button {
     width: 32px;
     height: 32px;
     background-color: #ffffff;
+    transition: 800ms;
 }
 
 .footer__link svg {
@@ -750,6 +778,7 @@ button {
 .footer__item:focus,
 .footer__item:active {
     background-color: #f16d7f;
+    border-radius: 50%;
 }
 
 .footer__item:hover svg,
@@ -828,7 +857,7 @@ button {
 }
 
 
-.registration__title_background-color {
+.registration__title-wrap {
     background-color: #f8f3f4;
 }
 
@@ -1070,7 +1099,7 @@ fieldset {
 }
 
 
-.cart__title_background-color {
+.cart__title-wrap {
     background-color: #f8f3f4;
 }
 
@@ -1135,11 +1164,11 @@ fieldset {
     margin: 0 0 6px 0;
 }
 
-.product-description__item_price-value {
+.product-description__item-price-value {
     color: #f16d7f;
 }
 
-.product-description__item_quantity-value {
+.product-description__item-quantity-value {
     margin: 0 0 0 25px;
     padding: 0 16px;
     font-size: 18px;
@@ -1153,7 +1182,7 @@ fieldset {
     margin: 28px 22px 0 auto;
 }
 
-.cart_buttons {
+.cart__buttons {
     display: flex;
     margin: 72px 0 128px 3px;
     justify-content: space-between;
@@ -1266,7 +1295,7 @@ fieldset {
     text-transform: uppercase;
 }
 
-.cart__sub-total_value {
+.cart__sub-total-value {
     margin: 0 0 0 25px;
 }
 
@@ -1280,7 +1309,7 @@ fieldset {
     text-transform: uppercase;
 }
 
-.cart__grand-total_value {
+.cart__grand-total-value {
     margin: 0 0 0 25px;
     color: #f16d7f;
 }
@@ -1316,7 +1345,7 @@ fieldset {
         margin: 59px 16px 0;
     }
 
-    .cart_buttons {
+    .cart__buttons {
         margin: 62px 0 0;
         justify-content: space-around;
     }
@@ -1367,7 +1396,7 @@ fieldset {
         margin-top: 26px;
     }
 
-    .product-description__item_quantity-value {
+    .product-description__item-quantity-value {
         padding: 0 9px;
         font-size: 10px;
         line-height: 12px;
@@ -1384,7 +1413,7 @@ fieldset {
         height: 11px;
     }
 
-    .cart_buttons {
+    .cart__buttons {
         margin: 30px 9px 0;
     }
 
